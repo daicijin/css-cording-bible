@@ -1,0 +1,80 @@
+/* 
+  disc
+* ------------------------------------------------------------------------------------- */
+.e-list-disc {
+  list-style: none;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 767px) {
+  .e-list-disc {
+    margin-bottom: 30px;
+  }
+}
+.e-list-disc li {
+  position: relative;
+  padding-left: 1.4em;
+  margin-bottom: 0.6em;
+}
+.e-list-disc li::before {
+  position: absolute;
+  top: 0.6em;
+  left: 0.3em;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  content: '';
+  border-radius: 100%;
+  background-color: #00BCD4;
+}
+.e-list-disc li ul,
+.e-list-disc li ol {
+  margin-bottom: 0;
+}
+/* 
+  decimal
+* ------------------------------------------------------------------------------------- */
+.e-list-decimal {
+  list-style: decimal;
+  margin-bottom: 20px;
+  margin-left: 1.4em;
+}
+@media only screen and (min-width: 767px) {
+  .e-list-decimal {
+    margin-bottom: 30px;
+  }
+}
+.e-list-decimal li {
+  margin-bottom: 0.6em;
+}
+.e-list-decimal li ul,
+.e-list-decimal li ol {
+  margin-bottom: 0;
+}
+/* 
+  arrow
+* ------------------------------------------------------------------------------------- */
+.e-list-arrow {
+  margin-left: 0;
+  list-style-type: none;
+}
+.e-list-arrow li {
+  position: relative;
+  padding-left: 1.4em;
+}
+.e-list-arrow li::before {
+  position: absolute;
+  top: .4em;
+  left: .3em;
+  display: inline-block;
+  width: .3em;
+  height: .3em;
+  content: '';
+  transform: rotate(45deg);
+  vertical-align: middle;
+  border-style: solid;
+  border-color: #000;
+  border-top-width: .1em;
+  border-right-width: .1em;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}

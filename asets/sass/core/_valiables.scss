@@ -1,0 +1,36 @@
+@use "sass:color";
+
+// grid
+$portrait:    375px !default;
+$landascape:  767px !default;
+$desktop:    1192px !default;
+
+// width
+$container-width: 1192px !default;
+$primary-width:    842px !default;
+$secondary-width:  300px !default;
+
+// Base Colors
+$primary-color:       #00BCD4 !default;
+$primary-light-color: #B2EBF2 !default;
+$primary-dark-color:  #0097A7 !default;
+
+// Text Colors
+$primary-text:   #212121          !default;
+$secondary-text: rgba(0,0,0,0.6 ) !default;
+$disable-text:   rgba(0,0,0,0.38) !default;
+$dividers:       #dedede          !default;
+
+// Link Colors
+$link-text:  #007EEB !default;
+$hover-text:  color.adjust($link-text, $alpha: -0.4) !default;
+$activc-text: color.adjust($link-text, $alpha: -0.4) !default;
+
+// Font Size
+$base-font-size:               16px !default;
+$base-font-size-landascape:    14px !default;
+$base-line-height:            1.5   !default;
+$base-line-height-landascape: 1.7   !default;
+
+// Font Family
+$my-font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Helvetica Neue", Arial, Meiryo, sans-serif;

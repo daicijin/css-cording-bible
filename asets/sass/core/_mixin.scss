@@ -1,0 +1,18 @@
+@mixin grid($classname: '.is-grid', $col:4, $w:940, $g:32) {
+  $g_ratio: math.div(math.div($g, 2), $w);
+  $col_ratio: math.div(100, $col);
+
+  $grid_gap: math.div(math.floor(($g_ratio * 100%) * 100), 100);
+  $grid_width: math.div(math.floor(($col_ratio * 100%) * 100), 100);
+
+  margin-right: - $grid_gap;
+  margin-left:  - $grid_gap;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  #{$classname} {
+    margin-right: $grid_gap;
+    margin-left:  $grid_gap;
+    flex: 0 0 (100/ $col) - ($grid_gap * 2);
+  }
+}

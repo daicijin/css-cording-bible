@@ -1,0 +1,78 @@
+@use "../core/valiables";
+
+.e-headline {
+  margin-bottom: 20px;
+  border-top: 1px solid #DEDEDE;
+}
+
+.e-headline_item {
+  line-height: 1.6;
+  display: block;
+  padding: 15px 14px 16px 14px;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.e-headline_item a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.e-headline_item a:hover {
+  text-decoration: underline;
+}
+
+.e-headline_date {
+  font-size: 12px;
+  font-weight: normal;
+  margin: .1em 2em .1em 0;
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.e-headline_title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0.4em;
+}
+
+@media only screen and (min-width: 767px) {
+  .e-headline {
+    margin-bottom: 30px;
+  }
+  .e-headline_item {
+    display: flex;
+    padding: 21px 16px 21px 16px;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .e-headline_title {
+    margin-top: 0;
+  }
+}
+
+.c-headline_item {
+  line-height: 1.6;
+  border-bottom: 1px solid valiables.$dividers;
+}
+
+.c-headline_item a {
+  text-decoration: none;
+  color: valiables.$primary-text;
+  padding: 15px 14px 16px 14px;
+  display: block;
+}
+
+.c-headline_item a:hover .c-headline_title {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 767px) {
+  .c-headline_item a {
+    display: flex;
+    padding: 21px 16px 21px 16px;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

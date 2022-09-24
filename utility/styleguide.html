@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../asets/sass/bundle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Document</title>
+</head>
+<body>
+  <header id="header" class="l-header">
+    <div class="l-header_pc">
+      <div class="l-header_primary-pc">
+        <p class="l-header_logo">ロゴ</p>
+        <div>
+          <p class="l-header_tel"></p>
+          <dev class="l-header_sub-nav"></dev>
+        </div>
+      </div>
+      <div class="l-header_secondary-pc">
+        <nav class="l-header_nav" aria-label="デスクトップ用サイト全体のメニュー">
+          <ul>
+            <li><a href="">グローバルナビゲーション</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="l-header_sp">
+      <div class="l-header_primary-sp">
+        <div class="l-header_order2">
+          <p class="l-header_logo">ロゴ</p>
+        </div>
+        <div class="l-header_nav-order1">
+          <div class="l-header_nav-control">
+            <button 
+              type="button" 
+              aria-controls="aria-offcanvas" 
+              aria-expanded="false"
+              aria-label="開く"
+              data-togle-offcanvas
+            >
+              <span class="l-header_nav-control-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="l-header_order3">
+          <p class="l-header_tel">TEL</p>
+        </div>
+      </div>
+      <div class="l-header_secondary-sp">
+        <div class="l-header_nav" aria-hidden="true" data-body-offcanvas>
+          <div id="aria-offcanvas" class="_nav-body">
+            <nav aria-label="スマートフォン用サイト全体のメニュー">
+              <ul>
+                <li><a href="">グローバルナビゲーション</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div id="js-offcanvas-bg"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="l-container">
+    <div class="l-container_primary-full"></div>
+  </div>
+  <div class="l-container">
+    <div class="l-container_primary"></div>
+  </div>
+  <div class="l-container is-container-column">
+    <div class="l-container_primary"></div>
+    <div class="l-container_secondary"></div>
+  </div>
+
+  <br>
+
+  <div class="is-grid-4to1">
+    <div class="is-grid"></div>
+    <div class="is-grid"></div>
+    <div class="is-grid"></div>
+    <div class="is-grid"></div>
+    <div class="is-grid"></div>
+  </div>
+
+  <br>
+
+  <h2 class="e-heading2 is-heading-bg is-heading-color-white">見出し大  - h2</h2>
+  <h3 class="e-heading3 is-heading-stripe">見出し中  - h3</h3>
+  <h4 class="e-heading4 is-heading-bdt">見出し小1 - h4</h4>
+  <h5 class="e-heading5 is-heading-bdl is-heading-color">見出し小2 - h5</h5>
+  <h6 class="e-heading6 is-heading-bdb">見出し小3 - h6</h6>
+
+  <ul class="e-list-disc">
+    <li>順序なしリスト</li>
+    <li>順序なしリスト</li>
+    <li>順序なしリスト</li>
+  </ul>
+
+  <ol class="e-list-decimal">
+    <li>番号付きリスト</li>
+    <li>番号付きリスト</li>
+    <li>番号付きリスト</li>
+  </ol>
+
+  <ul class="e-list-arrow">
+    <li>矢印つきリスト</li>
+    <li>矢印つきリスト</li>
+    <li>矢印つきリスト</li>
+  </ul>
+
+  <table class="e-table">
+    <tr>
+      <th>見出し</th>
+      <th>見出し</th>
+      <th>見出し</th>
+    </tr>
+    <tr>
+      <td>テキスト</td>
+      <td>テキスト</td>
+      <td>テキスト</td>
+    </tr>
+    <tr>
+      <td>テキスト</td>
+      <td>テキスト</td>
+      <td>テキスト</td>
+    </tr>
+  </table>
+  <!-- e-table -->
+  
+  <table class="e-table is-table-borderless">
+    <tr>
+      <th>見出し</th>
+      <th>見出し</th>
+      <th>見出し</th>
+    </tr>
+    <tr>
+      <td>テキスト</td>
+      <td>テキスト</td>
+      <td>テキスト</td>
+    </tr>
+    <tr>
+      <td>テキスト</td>
+      <td>テキスト</td>
+      <td>テキスト</td>
+    </tr>
+  </table>
+  <!-- e-table is-table-borderless -->
+
+  <div class="is-responsive-table">
+    <table class="e-table">
+      <tr>
+        <th class="is-cell-10p">見出し</th>
+        <th class="is-cell-15p">見出し</th>
+        <th class="is-cell-20p">見出し</th>
+      </tr>
+      <tr>
+        <td>テキスト</td>
+        <td>テキスト</td>
+        <td>テキスト</td>
+      </tr>
+      <tr>
+        <td>テキスト</td>
+        <td class="is-responsive-item-width-30vw">テキスト</td>
+        <td class="is-responsive-item-width-50vw">テキスト</td>
+      </tr>
+    </table>
+  </div> 
+  <!-- is-responsive -->
+
+  <p class="e-text">テキスト</p>
+  <p class="e-text-small">テキスト</p>
+
+  <p class="e-text">
+    <span class="is-text-bold">テキスト</span>
+  </p>
+  <p class="e-text is-text-center">
+    <span class="is-text-point">テキスト</span>
+  </p>
+  <p class="e-text is-text-right">
+    <span class="is-text-hightlight">テキスト</span>
+  </p>
+
+  <div class="e-button is-button-lg">
+    <button type="button">テキスト</button>
+  </div>
+  <div class="e-button">
+    <button type="button">テキスト</button>
+  </div>
+  <div class="e-button is-button-sm">
+    <button type="button">テキスト</button>
+  </div>
+
+  <div class="e-button is-button-disabled">
+    <button type="button">テキスト</button>
+  </div>
+  <div class="e-button is-button-accent">
+    <button type="button">テキスト</button>
+  </div>
+  <div class="e-button is-button-primary">
+    <button type="button">テキスト</button>
+  </div>
+
+  <div class="e-faq">
+    <h3 class="e-faq_title">タイトル</h3>
+    <div class="e-faq_body">
+      <p>テキスト</p>
+    </div>
+  </div>
+
+  <figure class="e-img">
+    <a href="">
+      <img src="" alt="" title="" width="100%">
+    </a>
+    <figcaption class="e-img_caption">キャプション</figcaption>
+  </figure>
+
+  <figure class="e-img is-img-33p">
+    <a href="">
+      <img src="" alt="" title="" width="100%">
+    </a>
+    <figcaption class="e-img_caption">キャプション</figcaption>
+  </figure>
+
+  <figure class="e-img is-img-33p is-img-left">
+    <a href="">
+      <img src="" alt="" title="" width="100%">
+    </a>
+    <figcaption class="e-img_caption">キャプション</figcaption>
+  </figure>
+  <p class="e-text">テキスト</p>
+
+  <br>
+
+  <div class="c-breadcrumb" role="navigation" aria-label="現在地表示">
+    <div class="c-breadcrumb_inner">
+      <span><a href="/">ホーム</a></span>
+      <span><a href="/category">カテゴリー</a></span>
+      <span>ページタイトル</span>
+    </div>
+  </div>
+
+  <br>
+
+  <ul class="e-headline">
+    <li class="e-headline_item">
+      <time class="e-headline_date" datetime="2021-01-01">2021年01月01日</time>
+      <p class="e-headline_title">
+        <a href="">
+          ニュース
+          <i class="material-icons is-headerline-new">fiber_new</i>
+        </a>
+      </p>
+    </li>
+    <li class="e-headline_item">
+      <time class="e-headline_date" datetime="2021-01-01">2021年01月01日</time>
+      <p class="e-headline_title">
+        <a href="">
+          ニュース
+          <i class="material-icons is-headerline-new">fiber_new</i>
+        </a>
+      </p>
+    </li>
+    <li class="e-headline_item">
+      <time class="e-headline_date" datetime="2021-01-01">2021年01月01日</time>
+      <p class="e-headline_title">
+        <a href="">
+          ニュース
+          <i class="material-icons is-headerline-new">fiber_new</i>
+        </a>
+      </p>
+    </li>
+  </ul>
+
+  <ul class="c-headline">
+    <li class="c-headline_item">
+      <a href="">
+        <time class="e-headline_date" datetime="2021-01-01">2021年01月01日</time>
+        <p class="c-headline_title">
+          ニュース
+          <i class="material-icons is-headerline-new">fiber_new</i>
+        </a>
+      </p>
+    </li>
+    <li class="c-headline_item">
+      <a href="">
+        <time class="e-headline_date" datetime="2021-01-01">2021年01月01日</time>
+        <p class="c-headline_title">
+          ニュース
+          <i class="material-icons is-headerline-new">fiber_new</i>
+        </a>
+      </p>
+    </li>
+    <li class="c-headline_item">
+      <a href="">
+        <time class="e-headline_date" datetime="2021-01-01">2021年01月01日</time>
+        <p class="c-headline_title">
+          ニュース
+          <i class="material-icons is-headerline-new">fiber_new</i>
+        </a>
+      </p>
+    </li>
+  </ul>
+
+  <div class="c-pagenavi">
+    <p class="c-pagenavi_title">100件中 11 - 20件表示</p>
+    <div class="c-pagenavi_body">
+      <a href="" rel="prev" class="c-pagenavi_prev">
+        <span class="material-icons">chevron_left</span>
+      </a>
+      <span class="is-pagenavi_current">1</span>
+      <a class="c-pagenavi_item" href="">2</a>
+      <a class="c-pagenavi_item" href="">3</a>
+      <a class="c-pagenavi_item" href="">4</a>
+      <span class="c-pagenavi_extend">...</span>
+      <a class="c-pagenavi_item" href="">10</a>
+      <a href="" rel="next" class="c-pagenavi_next">
+        <span class="material-icons">chevron_right</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="c-pagenavi">
+    <p class="c-pagenavi_title">100件中 11 - 20件表示</p>
+    <div class="c-pagenavi_body">
+      <span href="" rel="prev" class="c-pagenavi_prev is-pagenavi_disabled" disabled>
+        <span class="material-icons">chevron_left</span>
+      </span>
+      <span class="is-pagenavi_current">1</span>
+      <a class="c-pagenavi_item" href="">2</a>
+      <a class="c-pagenavi_item" href="">3</a>
+      <a class="c-pagenavi_item" href="">4</a>
+      <span class="c-pagenavi_extend">...</span>
+      <a class="c-pagenavi_item" href="">10</a>
+      <a href="" rel="next" class="c-pagenavi_next">
+        <span class="material-icons">chevron_right</span>
+      </a>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="c-card">
+    <a href="" class="c-card_link">
+      <figure class="c-card_img" src="" width="344" height="229" alt=""></figure>
+      <div class="c-card_body">
+        <h3 class="c-card_title">ページタイトル</h3>
+        <p class="c-card_text">テキスト</p>
+      </div>
+    </a>
+  </div>
+
+  <footer id="footer" class="l-footer">
+    <div class="l-footer_primary">
+      <div class="l-footer_address">住所</div>
+      <div class="l-footer_nav">ナビ</div>
+    </div>
+    <div class="l-footer_secondary">
+      <div class="l-footer_copy">© copyright</div>
+    </div>
+  </footer>
+</body>
+</html>
